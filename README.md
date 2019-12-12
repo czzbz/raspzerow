@@ -6,8 +6,11 @@ WIFI版树莓派配置
 2. 烧卡（略）
 3. 加载Boot分区
     在config.txt末尾添加一行
+
     `dtoverlay=dwc2`
+
     在cmdline.txt文件中"rootwait"后添加参数
+
     `modules-load=dwc2,g_ether`
 
     在跟目录下建立名为ssh的空文件夹用以开启ssh访问
@@ -26,8 +29,11 @@ WIFI版树莓派配置
 * * *
 
 安装PHP后可以使用此脚本加载配置
+
 将init.php复制到/home/pi/init.php
 
 编辑 rc.local
+
 加入一行
+
 `/usr/bin/php /home/pi/init.php`
